@@ -1,5 +1,8 @@
+@use './components/' as *;
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
 
 html{
     height: 100vh;
@@ -11,8 +14,13 @@ body {
   line-height: 1.6;
   font-family: 'Josefin Sans', 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
+  cursor: pointer ;
 }
 
+#app {
+  height: 100%;
+  width: 100%;
+} 
 
 *,
 *::before,
