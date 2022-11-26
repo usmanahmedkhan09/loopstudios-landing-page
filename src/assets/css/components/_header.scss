@@ -19,10 +19,25 @@
     list-style-type: none;
     padding: none;
     display: flex;
+
         li {
             padding: 0px 16px;
             color: $white;
             font-weight: 700;
+            position: relative;
+
+            &:hover::before {
+                content: ' ';
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border-radius: 10px;
+            }
        }
    }
 
