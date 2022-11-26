@@ -1,12 +1,8 @@
 <template>
-  <div
-    class="sidebar"
-    :class="sidebar ? 'open' : ''"
-    @click="$emit('closeSidebar')"
-  >
+  <div class="sidebar" :class="sidebar ? 'open' : ''">
     <div class="sidenav">
       <div class="cross_icon">
-        <CloseIconVue />
+        <CloseIconVue @click="$emit('closeSidebar')" />
       </div>
       <ul>
         <li><a href="">About</a></li>
