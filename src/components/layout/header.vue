@@ -13,8 +13,8 @@
           <li>Support</li>
         </ul>
       </nav>
+      <MenuVue class="menu_icon" />
     </div>
-
     <div class="heading">
       <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
     </div>
@@ -23,9 +23,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import LogoIcon from "@/components/icons/logoIcon.vue";
+import MenuVue from "../icons/menu.vue";
 
 export default defineComponent({
-  components: { LogoIcon },
+  components: { LogoIcon, MenuVue },
   setup() {
     return {};
   },
