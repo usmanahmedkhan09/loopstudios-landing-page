@@ -14,6 +14,7 @@
         
         .sidenav {
             width: 250px;
+            padding: 16px;
         }
         
     }
@@ -24,7 +25,7 @@
         transition: all 500ms;
         height: 100%;
         overflow-x: auto;
-        padding: 16px;
+       
 
         .cross_icon {
             display: flex;

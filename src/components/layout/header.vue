@@ -18,11 +18,7 @@
     <div class="heading">
       <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
     </div>
-    <SidebarVue
-      :sidebar="sidebar"
-      v-if="sidebar"
-      @closeSidebar="sidebar = false"
-    />
+    <SidebarVue :sidebar="sidebar" @closeSidebar="sidebar = false" />
   </header>
 </template>
 <script lang="ts">
