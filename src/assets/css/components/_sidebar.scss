@@ -12,7 +12,7 @@
     &.open{
         width: 100%;
         
-        .sidenav{
+        .sidenav {
             width: 250px;
         }
         
@@ -24,9 +24,16 @@
         transition: all 500ms;
         height: 100%;
         overflow-x: auto;
+        padding: 16px;
+
+        .cross_icon {
+            display: flex;
+            justify-content: end;
+        }
 
         ul {
             display: block;
+            list-style-type: none;
         }
 
         li a{
