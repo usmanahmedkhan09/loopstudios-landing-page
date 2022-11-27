@@ -28,6 +28,10 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 300px);
             gap: 16px;
+
+            .image{
+                background-repeat: no-repeat;
+            }
         }
     }
 }

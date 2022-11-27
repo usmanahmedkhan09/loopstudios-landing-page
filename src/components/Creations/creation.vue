@@ -6,7 +6,12 @@
     </div>
     <div class="creation--body">
       <div class="images_wrapper">
-        <div class="images" v-for="(image, index) in images" :key="index">
+        <div
+          class="image"
+          v-for="(image, index) in images"
+          :key="index"
+          :style="{ backgroundImage: `url(${getImageUrl(image.pic)})` }"
+        >
           {{ image.name }}
         </div>
       </div>
@@ -52,8 +57,18 @@ export default defineComponent({
         pic: "soccer-team",
       },
     ]);
+
+    const getImageUrl = (name: any) => {
+      let pic = new URL(
+        `../../assets/images/desktop/image-${name}.jpg`,
+        import.meta.url
+      ).href;
+      return pic;
+      console.log(pic);
+    };
     return {
       images,
+      getImageUrl,
     };
   },
 });
