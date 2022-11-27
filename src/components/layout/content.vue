@@ -14,12 +14,15 @@
         </p>
       </div>
     </div>
+    <CreationVue />
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
+import CreationVue from "../Creations/creation.vue";
 
 export default defineComponent({
+  components: { CreationVue },
   setup() {
     return {};
   },
