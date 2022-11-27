@@ -12,7 +12,7 @@
           :key="index"
           :style="{ backgroundImage: `url(${getImageUrl(image.pic)})` }"
         >
-          {{ image.name }}
+          <h1>{{ image.name }}</h1>
         </div>
       </div>
     </div>

@@ -1,0 +1,28 @@
+.footer{
+    min-height: 250px;
+    background-color: black;
+    padding: 64px 92px;
+
+    .log_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .icons {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    .list_wrapper{
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: unset;
+
+            li {
+                color: white;
+                margin: 0px 16px;
+            }
+        }
+    }
+}
