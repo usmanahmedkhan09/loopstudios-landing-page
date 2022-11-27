@@ -1,5 +1,33 @@
+@use '../util/' as *;
 .content{
     .section--one {
         padding: 64px 92px;
+        display: flex;
+        align-items: flex-end;
+
+        .image_wrapper{
+            // height: 400px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .card {
+            padding: 110px 40px;
+            height: 350px;
+            width: 550px;
+            background-color: white;
+            margin-left: -170px;
+
+            h1 {
+                // font-weight: 300;
+                max-width: 300px;
+            }
+
+            p {
+                color: $gray;
+            }
+        }
     }
 }
