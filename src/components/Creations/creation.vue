@@ -1,7 +1,7 @@
 <template>
   <div class="creation">
     <div class="creation--header">
-      <p class="title">OUR CREATIONS {{ isMediumScreen }}</p>
+      <p class="title">OUR CREATIONS</p>
       <button class="button desktop">SEE ALL</button>
     </div>
     <div class="creation--body">
