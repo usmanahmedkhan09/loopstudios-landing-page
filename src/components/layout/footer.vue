@@ -17,6 +17,7 @@
         <li><a href="">Products</a></li>
         <li><a href="">Support</a></li>
       </ul>
+      <p>2021 Loopstudios.All rights reserved</p>
     </div>
   </div>
 </template>

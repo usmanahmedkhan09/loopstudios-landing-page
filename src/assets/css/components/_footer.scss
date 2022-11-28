@@ -1,3 +1,4 @@
+@use '../util/' as *;
 .footer{
     min-height: 250px;
     background-color: black;
@@ -14,15 +15,27 @@
     }
 
     .list_wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
         ul {
             display: flex;
             list-style-type: none;
             padding: unset;
 
-            li {
+            li:not(:first-child) {
                 color: white;
                 margin: 0px 16px;
             }
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        p {
+            color: $gray;
+            font-weight: 700;
         }
     }
 }
