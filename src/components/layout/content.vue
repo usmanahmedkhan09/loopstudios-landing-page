@@ -14,7 +14,7 @@
         </p>
       </div>
     </div>
-    <!-- <CreationVue /> -->
+    <CreationVue />
   </main>
 </template>
 <script lang="ts">
