@@ -1,32 +1,52 @@
-@use '../util/' as *;
-.content{
-    margin: 102px 92px;
-    .section--one {
-        // padding: 64px 92px;
-        display: flex;
-        align-items: flex-end;
+@use "../util/" as *;
+.content {
+  margin: 102px 92px;
+  .section--one {
+    display: flex;
+    align-items: flex-end;
 
-        .image_wrapper{
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-        .card {
-            padding: 110px 40px;
-            height: 350px;
-            width: 550px;
-            background-color: white;
-            margin-left: -170px;
-
-            h1 {
-                max-width: 300px;
-            }
-
-            p {
-                color: $gray;
-            }
-        }
+    .image_wrapper {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
+    .card {
+      padding: 110px 40px;
+      height: 350px;
+      width: 550px;
+      background-color: white;
+      margin-left: -170px;
+      // container-type: inline-size;
+
+      h1 {
+        max-width: 300px;
+      }
+
+      p {
+        color: $gray;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 102px 32px;
+    .section--one {
+      flex-direction: column;
+
+      .card {
+        text-align: center;
+        padding: 32px 16px;
+        margin-left: unset;
+        width: fit-content;
+
+        h1 {
+          max-width: unset;
+        }
+      }
+    }
+  }
 }

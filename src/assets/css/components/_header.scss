@@ -1,83 +1,81 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.header{
-    min-height: 450px;
-   background-image: url('../images/desktop/image-hero.jpg');
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   display: flex;
-   padding: 32px 92px;
-   flex-direction: column;
+.header {
+  min-height: 450px;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  padding: 32px 92px;
+  flex-direction: column;
 
-   .navbar{
+  .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
     ul {
-        list-style-type: none;
-        padding: none;
-        display: flex;
-    
-            li {
-                padding: 0px 16px;
-                color: $white;
-                font-weight: 300;
-                position: relative;
-    
-                &:hover::before {
-                    content: ' ';
-                    width: 30px;
-                    height: 3px;
-                    background-color: white;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    border-radius: 10px;
-                }
-           }
-       }
+      list-style-type: none;
+      padding: none;
+      display: flex;
 
-       .menu_icon {
-        display: none;
-       }
-    
-   }
-  
-   .heading {
-        border: 2px solid white;
-        max-width:470px;
-        padding: 32px;
-        margin: auto 0px;
-        h1 {
-            font-size: 5.2rem;
-            line-height: 52px;
-            color: white;
-            font-weight: 300;
+      li {
+        padding: 0px 16px;
+        color: $white;
+        font-weight: 300;
+        position: relative;
+
+        &:hover::before {
+          content: " ";
+          width: 30px;
+          height: 3px;
+          background-color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          border-radius: 10px;
         }
-   }
+      }
+    }
+
+    .menu_icon {
+      display: none;
+    }
+  }
+
+  .heading {
+    border: 2px solid white;
+    max-width: 470px;
+    padding: 32px;
+    margin: auto 0px;
+    h1 {
+      font-size: 5.2rem;
+      line-height: 52px;
+      color: white;
+      font-weight: 300;
+    }
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    .header {
-        padding: 32px;
-        .navbar {
-            align-items: center;
-            ul {
-                display: none;
-            }
-            .menu_icon {
-                display: block;
-                align-self: flex-start;
-                margin-top: 7px;
-            }
-        }
-        .heading {
-            display: none;
-        }
+  .header {
+    padding: 32px;
+    .navbar {
+      align-items: center;
+      ul {
+        display: none;
+      }
+      .menu_icon {
+        display: block;
+        align-self: flex-start;
+        margin-top: 7px;
+      }
     }
+    .heading {
+      display: none;
+    }
+  }
 }

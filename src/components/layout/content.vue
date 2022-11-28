@@ -14,14 +14,12 @@
         </p>
       </div>
     </div>
-    <CreationVue />
-    <!-- <FooterVue /> -->
+    <!-- <CreationVue /> -->
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import CreationVue from "../Creations/creation.vue";
-// import FooterVue from "./footer.vue";
 
 export default defineComponent({
   components: { CreationVue },
