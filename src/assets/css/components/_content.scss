@@ -6,6 +6,8 @@
     align-items: flex-end;
 
     .image_wrapper {
+      min-width: 730px;
+      min-height: 500px;
       img {
         height: 100%;
         width: 100%;
@@ -14,18 +16,20 @@
     }
     .card {
       padding: 110px 40px;
-      height: 350px;
-      width: 550px;
+      max-height: 350px;
+      max-width: 550px;
       background-color: white;
       margin-left: -170px;
-      // container-type: inline-size;
+      //   container-type: inline-size;
 
       h1 {
         max-width: 300px;
+        // font-size: 32cqi;
       }
 
       p {
         color: $gray;
+        // font-size: 16cqi;
       }
     }
   }
@@ -36,6 +40,12 @@
     margin: 102px 32px;
     .section--one {
       flex-direction: column;
+      align-items: center;
+
+      .image_wrapper {
+        min-width: unset;
+        min-height: unset;
+      }
 
       .card {
         text-align: center;
