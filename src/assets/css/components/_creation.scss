@@ -12,13 +12,14 @@
 
   &--body {
     .images_wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 400px);
+      display: flex;
+      flex-wrap: wrap;
       gap: 16px;
       margin-top: 32px;
 
       .image {
+        flex: calc(100% / 4 - 16px);
+        min-height: 450px;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 32px;
@@ -66,8 +67,13 @@
 
     &--body {
       .images_wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        flex: 100%;
+        flex-direction: column;
+
+        .image {
+          min-height: 150px;
+          padding: 16px;
+        }
       }
     }
 
