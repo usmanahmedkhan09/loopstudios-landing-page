@@ -15,16 +15,16 @@
       </div>
     </div>
     <CreationVue />
-    <FooterVue />
+    <!-- <FooterVue /> -->
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import CreationVue from "../Creations/creation.vue";
-import FooterVue from "./footer.vue";
+// import FooterVue from "./footer.vue";
 
 export default defineComponent({
-  components: { CreationVue, FooterVue },
+  components: { CreationVue },
   setup() {
     return {};
   },
