@@ -1,7 +1,7 @@
 <template>
   <div class="creation">
     <div class="creation--header">
-      <p class="title">OUR CREATIONS</p>
+      <p class="title">OUR CREATIONS {{ isMediumScreen }}</p>
       <button class="button">SEE ALL</button>
     </div>
     <div class="creation--body">
@@ -20,9 +20,11 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useMediaQuery } from "@vueuse/core";
 
 export default defineComponent({
   setup() {
+    const isMediumScreen = useMediaQuery("(max-width: 768px)");
     const images = ref([
       {
         name: "Deep Earth",
@@ -60,14 +62,16 @@ export default defineComponent({
 
     const getImageUrl = (name: any) => {
       let pic = new URL(
-        `../../assets/images/desktop/image-${name}.jpg`,
+        `../../assets/images/${
+          isMediumScreen ? "mobile" : "desktop"
+        }/image-${name}.jpg`,
         import.meta.url
       ).href;
       return pic;
-      console.log(pic);
     };
     return {
       images,
+      isMediumScreen,
       getImageUrl,
     };
   },
