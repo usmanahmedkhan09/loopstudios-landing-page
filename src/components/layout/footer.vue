@@ -2,14 +2,6 @@
   <div class="footer">
     <div class="log_wrapper">
       <Logo />
-      <div class="icons">
-        <FacebookIcon />
-        <Twitter />
-        <Printerest />
-        <Instagram />
-      </div>
-    </div>
-    <div class="list_wrapper">
       <ul>
         <li><a href="">About</a></li>
         <li><a href="">Careers</a></li>
@@ -17,6 +9,14 @@
         <li><a href="">Products</a></li>
         <li><a href="">Support</a></li>
       </ul>
+    </div>
+    <div class="list_wrapper">
+      <div class="icons desktop">
+        <FacebookIcon />
+        <Twitter />
+        <Printerest />
+        <Instagram />
+      </div>
       <p>2021 Loopstudios.All rights reserved</p>
     </div>
   </div>

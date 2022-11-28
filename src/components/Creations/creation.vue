@@ -1,8 +1,8 @@
 <template>
   <div class="creation">
     <div class="creation--header">
-      <p class="title">OUR CREATIONS {{ isMediumScreen }}</p>
-      <button class="button">SEE ALL</button>
+      <p class="title">OUR CREATIONS</p>
+      <button class="button desktop">SEE ALL</button>
     </div>
     <div class="creation--body">
       <div class="images_wrapper">
@@ -15,6 +15,9 @@
           <h1>{{ image.name }}</h1>
         </div>
       </div>
+    </div>
+    <div class="button_wrapper">
+      <button class="button mobile">SEE ALL</button>
     </div>
   </div>
 </template>

@@ -1,43 +1,62 @@
-@use '../util/' as *;
-.footer{
-    min-height: 200px;
-    background-color: black;
-    padding: 0px 92px;
-    display: flex;
-    justify-content: center;    flex-direction: column;
+@use "../util/" as *;
+.footer {
+  min-height: 200px;
+  background-color: black;
+  padding: 0px 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   flex-direction: column;
 
-    .log_wrapper {
-        display: flex;
-        justify-content: space-between;
+  .log_wrapper {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: unset;
 
-        .icons {
-            display: flex;
-            gap: 16px;
-        }
+      li:not(:first-child) {
+        color: white;
+        margin: 0px 16px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+      }
     }
+  }
 
-    .list_wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 16px;
-        ul {
-            display: flex;
-            list-style-type: none;
-            padding: unset;
+  .list_wrapper {
+    // display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
 
-            li:not(:first-child) {
-                color: white;
-                margin: 0px 16px;
-            }
-            a {
-                text-decoration: none;
-                color: white;
-                font-weight: 700;
-            }
-        }
-        p {
-            color: $gray;
-            font-weight: 700;
-        }
+    .icons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
     }
+    p {
+      color: $gray;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    .list_wrapper {
+      flex-direction: column;
+      //   ul {
+      //     flex-direction: column;
+      //     li {
+      //       margin: unset !important;
+      //     }
+      //   }
+    }
+  }
 }

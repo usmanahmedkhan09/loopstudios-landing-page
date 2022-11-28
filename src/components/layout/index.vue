@@ -1,7 +1,7 @@
 <template>
   <HeaderVue />
   <Content />
-  <!-- <FooterVue /> -->
+  <FooterVue />
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
