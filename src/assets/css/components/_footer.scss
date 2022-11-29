@@ -17,6 +17,20 @@
         color: white;
         margin: 0px 16px;
       }
+
+      li:hover::before {
+        content: " ";
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+      }
+
       a {
         text-decoration: none;
         color: white;
@@ -30,6 +44,13 @@
       display: flex;
       gap: 16px;
       margin-bottom: 16px;
+
+      svg:hover::before {
+        content: " ";
+        height: 45px;
+        width: 45px;
+        border-bottom: 2px solid red;
+      }
     }
     p {
       color: $gray;
