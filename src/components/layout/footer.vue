@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="log_wrapper">
       <Logo />
       <ul>
@@ -19,7 +19,7 @@
       </div>
       <p>2021 Loopstudios.All rights reserved</p>
     </div>
-  </div>
+  </footer>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
