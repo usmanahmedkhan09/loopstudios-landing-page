@@ -14,17 +14,20 @@
     .images_wrapper {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
       margin-top: 32px;
+      gap: 64px;
 
       .image {
         flex: calc(100% / 4 - 16px);
         height: 450px;
+        max-width: calc(256px);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 32px;
         display: flex;
         align-items: flex-end;
+
+        // margin: 0px 0px 24px 0px;
 
         &:hover::before {
           content: " ";
@@ -90,6 +93,7 @@
         .image {
           height: 240px;
           padding: 16px;
+          max-width: unset;
         }
       }
     }

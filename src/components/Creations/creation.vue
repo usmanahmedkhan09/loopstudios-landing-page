@@ -38,6 +38,10 @@ export default defineComponent({
         pic: "night-arcade",
       },
       {
+        name: "Soccer team",
+        pic: "soccer-team",
+      },
+      {
         name: "the grid",
         pic: "grid",
       },
@@ -56,10 +60,6 @@ export default defineComponent({
       {
         name: "make it eyefish",
         pic: "fisheye",
-      },
-      {
-        name: "Soccer team",
-        pic: "soccer-team",
       },
     ]);
 
