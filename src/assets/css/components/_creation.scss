@@ -19,7 +19,7 @@
 
       .image {
         flex: calc(100% / 4 - 16px);
-        min-height: 450px;
+        height: 450px;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 32px;
@@ -88,7 +88,7 @@
         flex-direction: column;
 
         .image {
-          min-height: 150px;
+          height: 240px;
           padding: 16px;
         }
       }
@@ -106,19 +106,6 @@
     .button_wrapper {
       text-align: center;
       margin-top: 32px;
-    }
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .creation {
-    &--body {
-      .images_wrapper {
-        .image {
-          min-height: 650px;
-          padding: 16px;
-        }
-      }
     }
   }
 }
