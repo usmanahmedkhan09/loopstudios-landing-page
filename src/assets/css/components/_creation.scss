@@ -15,12 +15,12 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 32px;
-      gap: 64px;
+      gap: 24px;
 
       .image {
-        flex: calc(100% / 4 - 16px);
+        flex: calc(100% / 4 - 32px);
         height: 450px;
-        max-width: calc(256px);
+        max-width: calc(256px + 48px);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 32px;
